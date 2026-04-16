@@ -10,7 +10,7 @@ class AngryBear < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Blue-Bear-Security/angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_darwin_amd64.tar.gz"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_darwin_amd64.tar.gz"
       sha256 "58210eb288810ac4895a51addd99e6b5d3efa3c6a07b90a7024e44d8ca5b9d5b"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class AngryBear < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Blue-Bear-Security/angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_darwin_arm64.tar.gz"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_darwin_arm64.tar.gz"
       sha256 "1648b75939c96a68a9d7117266b82060ce7380f59c1d4e7587a6f1b391fc13e1"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class AngryBear < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_linux_amd64.tar.gz"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_linux_amd64.tar.gz"
       sha256 "1684e7f975be4b8650dfd84feba5ab1658b7ce1bf6b031e824febc0da0703807"
       define_method(:install) do
         bin.install "angry-bear"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_linux_arm64.tar.gz"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.9.0/angry-bear_0.9.0_linux_arm64.tar.gz"
       sha256 "f7410277e7c5fd21c0c8e74f07cb34b4af3076d4901547ce4a66d65929aa93f0"
       define_method(:install) do
         bin.install "angry-bear"
