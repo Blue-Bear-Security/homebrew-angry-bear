@@ -5,21 +5,21 @@
 class AngryBear < Formula
   desc "Enforce skill-loading requirements for AI coding agents"
   homepage "https://github.com/Blue-Bear-Security/angry-bear"
-  version "0.10.0"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.10.0/angry-bear_0.10.0_darwin_amd64.tar.gz"
-      sha256 "d782ccd1a46a8619d26619caa96b8552aa55d80f204573e67b008705010f4921"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.11.0/angry-bear_0.11.0_darwin_amd64.tar.gz"
+      sha256 "f1dd744e3465ecf05e39d3146aefabb3fdac71324258a0f1ca26201c687d8da6"
 
       define_method(:install) do
         bin.install "angry-bear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.10.0/angry-bear_0.10.0_darwin_arm64.tar.gz"
-      sha256 "9e1d8ad6fef16e393a46fd45f359a02514594e180a9e7774d802339117c8e655"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.11.0/angry-bear_0.11.0_darwin_arm64.tar.gz"
+      sha256 "e372441ca303b84b3fc3f935377156cb9309e62b2314ed352cee7030b2f09b48"
 
       define_method(:install) do
         bin.install "angry-bear"
@@ -29,15 +29,15 @@ class AngryBear < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.10.0/angry-bear_0.10.0_linux_amd64.tar.gz"
-      sha256 "57a2f8f19d8e7d6c1f620a16e3e099ce10f435a0d0d06a6d49e642263aab4782"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.11.0/angry-bear_0.11.0_linux_amd64.tar.gz"
+      sha256 "932986f995ad0a2029ab4279c4fbac3208b565650dc8cdc19134bf1eb7fde865"
       define_method(:install) do
         bin.install "angry-bear"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.10.0/angry-bear_0.10.0_linux_arm64.tar.gz"
-      sha256 "6e8223781e21b4842997c0edf1689557207ec8e398a4069c5503dc61637d297c"
+      url "https://github.com/Blue-Bear-Security/homebrew-angry-bear/releases/download/v0.11.0/angry-bear_0.11.0_linux_arm64.tar.gz"
+      sha256 "9c707616c53d8550d250e2616c631a71259c99d945d0ce61e3af686da9acbd7d"
       define_method(:install) do
         bin.install "angry-bear"
       end
